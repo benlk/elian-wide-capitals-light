@@ -10,6 +10,7 @@ ChangeLog
 
 7 June 2017 (Initial Release)
 - Initial release
+- KNOWN PROBLEM: OTF and WOFF generation complains about bad hints in \ and | characters
 
 Acknowledgements
 

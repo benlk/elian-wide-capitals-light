@@ -23,6 +23,10 @@ Here's what to do:
 1. [Fork the repository on GitHub](https://help.github.com/articles/fork-a-repo/)
 2. Make your edits using [Fontforge](https://fontforge.github.io/)
 3. Save your edits into the existing .sfd file, but don't re-export the font files.
+	- Make sure that the file can successfully be exported as TTF, OTF and WOFF:
+		- no self-intersecting characters
+		- no "non-integral points" errors
+		- [fix common font problems automagically](https://fontforge.github.io/problems.html)
 5. If so desired, add your changes/name to FONTLOG.txt. ([an example FONTLOG](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL-FAQ_web#11bc4f28))
 4. Commit your changes.
 5. [Open a pull request](https://help.github.com/articles/creating-a-pull-request/) between your fork and this repository, being careful to describe what changes you make.
