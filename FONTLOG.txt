@@ -1,0 +1,20 @@
+FONTLOG for Elian Wide Capitals Light EWCL_1
+
+Basic Font Information
+
+EWCL_1 is an ASCII typeface that supports languages using the Lating script, and could be expanded to support its variants for better UTF-8 support.
+
+To contibute to this project, follow the instructions at https://github.com/benlk/elian-wide-capitals-light/blob/master/CONTRIBUTING.md
+
+ChangeLog
+
+7 June 2017 (Initial Release)
+- Initial release
+
+Acknowledgements
+
+- To BuzzFeed and Nicole Nguyen for writing this article:https://www.buzzfeed.com/nicolenguyen/how-you-do-dat
+- To the maintainers of MyScriptFont.com: http://www.myscriptfont.com/
+- To C. C. Elian, for creating this script: http://www.ccelian.com/ElianScriptFull.html
+- To the SIL Open Font License authors: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=OFL-FAQ_web
+- To the FontForge maintainers: https://fontforge.github.io/
