@@ -1,0 +1,73 @@
+.elian-grid {
+  display: inline-grid;
+
+  grid-gap: 0.1em;
+  grid-template-columns: 1.7em 1.7em 1.7em;
+  grid-template-rows: 1.7em 1.7em 1.7em;
+  grid-template-areas:
+    "c f i"
+    "b e h"
+    "a d g";
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+@media ( max-width: 850px ) {
+  div.elian-grid {
+    font-size: 1rem;
+  }
+}
+@media ( max-width: 590px ) {
+  div.elian-grid {
+    font-size: 0.7rem;
+  }
+}
+@media ( max-width: 450px ) {
+  div.elian-grid {
+    float: none;
+    clear: both;
+    margin: 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+.elian-grid span:nth-child(1) {grid-area: a}
+.elian-grid span:nth-child(2) {grid-area: b}
+.elian-grid span:nth-child(3) {grid-area: c}
+.elian-grid span:nth-child(4) {grid-area: d}
+.elian-grid span:nth-child(5) {grid-area: e}
+.elian-grid span:nth-child(6) {grid-area: f}
+.elian-grid span:nth-child(7) {grid-area: g}
+.elian-grid span:nth-child(8) {grid-area: h}
+.elian-grid span:nth-child(9) {grid-area: i}
+
+p.duplicate-right {
+  margin-top: 0;
+}
+.duplicate-right::before {
+  content: attr(content);
+
+  color: hsl( 220, 100%, 30% );
+
+  display: block;
+  float: left;
+  width: 50%;
+  user-select: all;
+}
+.duplicate-right::after {
+  /* this way, it contains the content of the thing */
+  content: attr(content);
+
+  /* defined in index.html */
+  font-family: ElianWideCapsLight, sans-serif;
+
+  color: hsl( 0, 100%, 30% );
+
+  display: block;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: left;
+  user-select: all;
+
+  padding-left: .25rem;
+}
