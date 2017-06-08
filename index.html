@@ -5,7 +5,10 @@
 		<style type="text/css">
 			@font-face {
 				font-family: ElianWideCapsLight;
-				src: url('./ElianWideCapitalsLight.woff');
+				src: url('./ElianWideCapitalsLight.woff'),
+					url('./ElianWideCapitalsLight.otf'),
+					url('./ElianWideCapitalsLight.ttf')
+				;
 				font-weight: normal;
 			}
 			.ewcl {
@@ -39,44 +42,64 @@
 		</div>
 	</section>
 	<section class="cf">
-		<div class="fl w-100 tl pa1">
-			<p class="flex items-center justify-center">
+		<div class="fl w-100 tl pa1 bt bb b--black">
+			<p class="flex items-center justify-center-s">
 				<a class="f5 ma1 no-underline black bg-animate hover-bg-green hover-white items-center pa2 ba b--green border-box" href="./Elian_Wide_Capitals_Light/ElianWideCapitalsLight.woff">Download .woff</a>
 				<a class="f5 ma1 no-underline black bg-animate hover-bg-black hover-white items-center pa2 ba ba-black border-box" href="./Elian_Wide_Capitals_Light/ElianWideCapitalsLight.ttf">.ttf</a>
 				<a class="f5 ma1 no-underline black bg-animate hover-bg-black hover-white items-center pa2 ba ba-black border-box" href="./Elian_Wide_Capitals_Light/ElianWideCapitalsLight.otf">.otf</a>
 			</p>
+			<p class="mw6">
+				To use this font, first download these font files and save them to your server. Then use a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"><code>@font-face</code></a> declaration in your CSS to load the files from your server. <a href="https://caniuse.com/#search=woff">Modern browsers support WOFF</a>, so you ought not need the TTF or OTF files, but they may be desired for other purposes.
+			</p>
+<pre class="pre"><code>
+&lt;style type="text/css"&gt;
+	@font-face {
+		font-family: ElianWideCapsLight;
+		src: url('./ElianWideCapitalsLight.woff'),
+			url('./ElianWideCapitalsLight.otf'),
+			url('./ElianWideCapitalsLight.ttf')
+		;
+		font-weight: normal;
+	}
+	.ewcl {
+		font-family: ElianWideCapsLight, sans-serif;
+	}
+&lt;/style&gt;
+</code></pre>
+			<p class="mw6">This font can also be used on computers that support TrueType fonts.</p>
+			<p class="mw6">This font ("Elian Wide Capitals Light EWCL_1") is available under the terms of the SIL Open Font License; for more information see <a href="https://github.com/benlk/elian-wide-capitals-light">the font's Github repository</a>. Contributions and suggestions are welcome; please see <a href="https://github.com/benlk/elian-wide-capitals-light/blob/master/CONTRIBUTING.md">the contributing guide</a> for more information.</p>
 		</div>
 	</section>
 	<section class="cf">
 		<div class="fl w-50 tl pa1">
 			<p>
 				Elian Wide Capitals Light is designed with the following ideas in mind:
-				<dl>
-					<dt>Horizontal capitals</dt>
-					<dd>The 'long' segment of second- and third-cycle characters is aligned horizontally. In the case of characters with boxes, this is done by expanding the box.</dd>
-					<dt>Vertical lowercase letters</dt>
-					<dd>With the exceptions of the lowercase k, q, r, t, and z, where possible lowercase letters have been designed to use the 'long' segment of second- and third-cycle characters is aligned vertically.</dd>
-					<dt>Pure geometric design</dt>
-					<dd>Snap-to-grid, no serifs.</dd>
-					<dt></dt>
-					<dd></dd>
-				</dl>
 			</p>
+			<dl>
+				<dt>Horizontal capitals</dt>
+				<dd>The 'long' segment of second- and third-cycle characters is aligned horizontally. In the case of characters with boxes, this is done by expanding the box.</dd>
+				<dt>Vertical lowercase letters</dt>
+				<dd>With the exceptions of the lowercase k, q, r, t, and z, where possible lowercase letters have been designed to use the 'long' segment of second- and third-cycle characters is aligned vertically.</dd>
+				<dt>Pure geometric design</dt>
+				<dd>Snap-to-grid, no serifs.</dd>
+				<dt></dt>
+				<dd></dd>
+			</dl>
 		</div>
 		<div class="fl w-50 ewcl tl pa1 bl b--silver">
 			<p>
 				Elian Wide Capitals Light is designed with the following ideas in mind:
-				<dl>
-					<dt>Horizontal capitals</dt>
-					<dd>The 'long' segment of second- and third-cycle characters is aligned horizontally. In the case of characters with boxes, this is done by expanding the box.</dd>
-					<dt>Vertical lowercase letters</dt>
-					<dd>With the exceptions of the lowercase k, q, r, t, and z, where possible lowercase letters have been designed to use the 'long' segment of second- and third-cycle characters is aligned vertically.</dd>
-					<dt>Pure geometric design</dt>
-					<dd>Snap-to-grid, no serifs.</dd>
-					<dt></dt>
-					<dd></dd>
-				</dl>
 			</p>
+			<dl>
+				<dt>Horizontal capitals</dt>
+				<dd>The 'long' segment of second- and third-cycle characters is aligned horizontally. In the case of characters with boxes, this is done by expanding the box.</dd>
+				<dt>Vertical lowercase letters</dt>
+				<dd>With the exceptions of the lowercase k, q, r, t, and z, where possible lowercase letters have been designed to use the 'long' segment of second- and third-cycle characters is aligned vertically.</dd>
+				<dt>Pure geometric design</dt>
+				<dd>Snap-to-grid, no serifs.</dd>
+				<dt></dt>
+				<dd></dd>
+			</dl>
 		</div>
 	</section>
 	<section class="cf">
@@ -90,22 +113,22 @@
 					to.innerHTML = from.innerHTML;
 				}
 			</script>
-			<div id="from" oninput="sync()" class="pa1 w-100 db b--black ba" contenteditable>Enter text here to see things happen.</div>
+			<div id="from" oninput="sync()" class="pa1 w-100 db b--black ba" contenteditable>Enter text here to see things happen. (Requires Javascript)</div>
 		</div>
 		<div class="fl w-50 ewcl tl pa1 bl b--silver">
 			<h3>Dingus</h3>
 			<p>This text box displays characters entered in the other text box.</p>
-			<div id="to" class="pa1 w-100 db ewcl b--black ba" disabled></div>
+			<div id="to" class="pa1 w-100 db ewcl b--black ba" disabled>Enter text to the left to see things happen here. (Requires JavaScript)</div>
 		</div>
 	</section>
 	<section class="cf">
+		<!-- What, you thought I was going to duplicate this left/right by hand? No, I elected to make the text duplicate itself with clever CSS that probably isn't very accessible. -->
 		<h3 class="fl w-100 tl pa1 duplicate-right" content="Sample Text"></h3>
 		<p class="fl w-100 tl pa1 duplicate-right" content="Velit ut labore ipsa sed fuga vel autem doloribus. Recusandae quia omnis earum dignissimos. Iure pariatur qui consequatur reprehenderit eos dolorem harum maxime. Qui nulla non sunt quia recusandae eaque. Qui tenetur quaerat illum voluptatem et."></p>
 		<p class="fl w-100 tl pa1 duplicate-right" content="Asperiores nam saepe et architecto excepturi dicta eaque reiciendis. Inventore eos veritatis ut aliquid quae earum soluta iste. Tempore dicta illo libero eum eos et illo. Sequi eum qui dolore qui voluptas voluptatibus tenetur. Accusamus deserunt eum accusantium aliquam id ipsum minus consequuntur."></p>
 		<p class="fl w-100 tl pa1 duplicate-right" content="Perspiciatis quibusdam et voluptas non cum consequatur velit. Aut quos rerum aspernatur dolorem architecto aperiam est. Totam sit veritatis asperiores."></p>
 		<p class="b fl w-100 tl pa1 duplicate-right" content="This paragraph is bolded. Elian Wide Capsitals Light does not come with built-in italic glyphs; your browser is generating them by itself."></p>
 		<p class="i fl w-100 tl pa1 duplicate-right" content="This paragraph is italicized. Elian Wide Capitals Light does not come with built-in italic glyphs; your browser is generating them by itself."></p>
-		<p class="fl w-100 tl pa1 duplicate-right" content=""></p>
 	</section>
 </body>
 </html>
